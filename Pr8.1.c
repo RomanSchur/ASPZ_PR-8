@@ -7,7 +7,7 @@ int main() {
     ssize_t count;
     
     fd = -1;   
-    count = write(fd, buffer, sizeof(buffer) - 1); 
+    count = write(fd, buffer, sizeof(buffer)); 
 
     if (count == -1) {        
         printf("count = -1.\n");
